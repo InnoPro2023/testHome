@@ -6,7 +6,14 @@ import { Nopage } from './components/Nopage';
 
 function App() {
   return (
-    <Home />
+    <>
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='About' element={<About/>}/>
+        <Route path='*' element={<Nopage />} />
+      </Routes>
+    </>
   );
 }
 
