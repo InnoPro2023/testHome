@@ -7,7 +7,6 @@ import { Nopage } from './components/Nopage';
 function App() {
   return (
     <>
-      <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='About' element={<About/>}/>
